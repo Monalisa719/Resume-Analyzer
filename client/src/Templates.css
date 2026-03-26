@@ -1,0 +1,209 @@
+/* Wrapper and Controls */
+.template-viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.template-controls p {
+  margin: 0 0 10px 0;
+  color: var(--text-dark);
+}
+
+.template-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ui-btn {
+  background: #e0e0e0;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s;
+}
+.ui-btn:hover {
+  background: #d0d0d0;
+}
+.ui-btn.active {
+  background: var(--wa-header-light);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.template-render-wrapper {
+  background: #fdfdfd;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.resume-canvas {
+  width: 800px;
+  min-height: 1056px; /* Approx US Letter Letter aspect ratio */
+  background: white;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   PROFESSIONAL TEMPLATE (Classic Black & White)
+================================================== */
+.professional {
+  padding: 40px;
+}
+.prof-header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.prof-header h1 { margin: 0 0 10px 0; font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; }
+.prof-header p { margin: 0; font-size: 0.95rem; color: #555; }
+
+.prof-section { margin-bottom: 20px; }
+.prof-title {
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  padding-bottom: 5px;
+  color: #222;
+}
+.prof-content p { margin: 0 0 5px 0; font-size: 0.95rem; }
+.prof-content ul { margin: 5px 0 0 0; padding-left: 20px; font-size: 0.95rem; }
+.prof-item { margin-bottom: 15px; }
+.prof-item-header { display: flex; justify-content: space-between; align-items: baseline; }
+.prof-item-header h4 { margin: 0; font-size: 1.05rem; }
+.prof-item-header span { font-weight: 600; font-size: 0.9rem; }
+.tech-stack { font-size: 0.85rem; color: #555; margin-bottom: 5px; }
+
+/* ==================================================
+   CREATIVE TEMPLATE (Sidebar Layout)
+================================================== */
+.creative {
+  display: flex;
+}
+.creative-sidebar {
+  width: 32%;
+  background: #2a2a35;
+  color: #fff;
+  padding: 40px 25px;
+}
+.creative-avatar {
+  width: 100px;
+  height: 100px;
+  background: #ff006e;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.creative-name {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.creative-contact p { margin: 0 0 8px 0; font-size: 0.85rem; color: #ccc; text-align: center;}
+.creative-title {
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+}
+.creative-skills h4 { margin: 0 0 5px 0; font-size: 0.85rem; color: #aaa; text-transform: uppercase; }
+.creative-skills p { margin: 0 0 15px 0; font-size: 0.85rem; line-height: 1.4; }
+
+.creative-main {
+  width: 68%;
+  padding: 50px 40px;
+}
+.creative-main .creative-title {
+  color: #333;
+  border-bottom-color: #2a2a35;
+  margin-top: 0;
+}
+.creative-card { margin-bottom: 25px; }
+.creative-card h4 { margin: 0 0 5px 0; font-size: 1.2rem; color: #222; }
+.creative-dates { float: right; font-weight: normal; font-size: 0.9rem; color: #666; }
+.creative-tech { margin: 0 0 8px 0; font-size: 0.85rem; color: #ff006e; font-weight: 600; }
+.creative-card ul { margin: 0; padding-left: 20px; font-size: 0.95rem; color: #444; line-height: 1.5; }
+.creative-card p { margin: 0 0 5px 0; font-size: 0.95rem; }
+
+/* ==================================================
+   MINIMAL TEMPLATE (Sleek & Clean)
+================================================== */
+.minimal {
+  padding: 50px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+.minimal-header {
+  margin-bottom: 40px;
+}
+.minimal-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #111;
+  letter-spacing: -1px;
+}
+.minimal-header p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+.minimal-grid {
+  display: flex;
+  gap: 40px;
+}
+.minimal-column {
+  flex: 1;
+}
+.minimal-column section { margin-bottom: 30px; }
+.minimal-column h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 15px 0;
+}
+.minimal-paragraph { margin: 0 0 10px 0; font-size: 0.9rem; color: #555; line-height: 1.6; }
+
+/* ==================================================
+   PRINT STYLES FOR NATIVE PDF EXPORT
+================================================== */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #resume-capture-area, #resume-capture-area * {
+    visibility: visible;
+  }
+  #resume-capture-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  @page { margin: 0.5in; }
+}
